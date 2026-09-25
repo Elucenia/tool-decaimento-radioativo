@@ -1,0 +1,218 @@
+{
+  "tool": {
+    "id": "decaimento-radioativo",
+    "title": "Decaimento radioativo",
+    "short": "Atividade restante de um radiofármaco",
+    "desc": "Calcula a atividade restante de um radionuclídeo após um tempo (A = A₀ · e^−λt), com meias-vidas de 99mTc, 18F, 131I, 123I, 68Ga e 177Lu.",
+    "lead": "Corrige a atividade de um radiofármaco para o horário de administração ou de leitura, a partir da atividade calibrada e da meia-vida física.",
+    "spec": [
+      "medicina-nuclear",
+      "radiologia-e-diagnostico-por-imagem",
+      "radioterapia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "iso",
+        "Radionuclídeo",
+        "sel",
+        {
+          "opts": {
+            "tc99m": "Tecnécio-99m (6,01 h)",
+            "f18": "Flúor-18 (109,7 min)",
+            "i131": "Iodo-131 (8,02 dias)",
+            "i123": "Iodo-123 (13,2 h)",
+            "ga68": "Gálio-68 (67,7 min)",
+            "lu177": "Lutécio-177 (6,65 dias)"
+          }
+        }
+      ],
+      [
+        "a0",
+        "Atividade inicial (MBq ou mCi)",
+        "num",
+        {
+          "min": 0.001,
+          "max": 100000,
+          "step": 0.001,
+          "unit": "MBq/mCi",
+          "ph": "740"
+        }
+      ],
+      [
+        "t",
+        "Tempo decorrido",
+        "num",
+        {
+          "min": 0,
+          "max": 100000,
+          "step": 0.1,
+          "unit": "",
+          "ph": "6"
+        }
+      ],
+      [
+        "tu",
+        "Unidade do tempo",
+        "radio",
+        {
+          "opts": {
+            "min": "minutos",
+            "h": "horas",
+            "d": "dias"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>A = A<sub>0</sub> × e<sup>−λt</sup></strong>, com <strong>λ = ln 2 ÷ T<sub>½</sub></strong>; o mesmo que A = A<sub>0</sub> × (1/2)<sup>t ÷ T½</sup>.</p><p>O resultado sai na mesma unidade da atividade inicial (1 mCi = 37 MBq). Meias-vidas físicas da avaliação NUBASE2020, arredondadas.</p>",
+    "table": [
+      [
+        "Radionuclídeo",
+        "Meia-vida física",
+        "Uso principal"
+      ],
+      [
+        "<sup>99m</sup>Tc",
+        "6,01 h",
+        "Cintilografias (óssea, perfusão miocárdica, renal, tireoide)"
+      ],
+      [
+        "<sup>18</sup>F",
+        "109,7 min",
+        "PET (FDG, PSMA, fluoreto)"
+      ],
+      [
+        "<sup>131</sup>I",
+        "8,02 dias",
+        "Terapia de hipertireoidismo e câncer diferenciado de tireoide"
+      ],
+      [
+        "<sup>123</sup>I",
+        "13,2 h",
+        "Cintilografia de tireoide, MIBG"
+      ],
+      [
+        "<sup>68</sup>Ga",
+        "67,7 min",
+        "PET com DOTATATE e PSMA"
+      ],
+      [
+        "<sup>177</sup>Lu",
+        "6,65 dias",
+        "Terapia com radioligantes (DOTATATE, PSMA)"
+      ]
+    ],
+    "tips": [
+      "Depois de uma meia-vida resta 50%; de duas, 25%; de 10 meias-vidas, cerca de 0,1% (regra prática para decaimento de rejeitos).",
+      "A meia-vida <strong>física</strong> não é a efetiva: a eliminação biológica (urina, fezes) faz a atividade no corpo cair mais rápido, o que importa para dosimetria e orientação de radioproteção.",
+      "Com <sup>18</sup>F e <sup>68</sup>Ga, poucos minutos de atraso mudam bastante a atividade: corrija a dose para o horário real da injeção antes de calcular o SUV.",
+      "Para saber quanto calibrar ou encomendar, divida a atividade desejada no horário da injeção pela fração restante mostrada: A<sub>0</sub> = A ÷ (1/2)<sup>t ÷ T½</sup>."
+    ],
+    "sources": [
+      [
+        "Kondev FG et al. The NUBASE2020 evaluation of nuclear physics properties. Chinese Physics C, 2021.",
+        "https://doi.org/10.1088/1674-1137/abddae"
+      ],
+      [
+        "International Atomic Energy Agency (IAEA). Live Chart of Nuclides.",
+        "https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html"
+      ]
+    ],
+    "cases": [
+      [
+        "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        {
+          "iso": "tc99m",
+          "a0": 740,
+          "t": 6.01,
+          "tu": "h"
+        },
+        {
+          "raw": {
+            "a": 370,
+            "frac": 0.5,
+            "halves": 1
+          },
+          "main": "370"
+        }
+      ],
+      [
+        "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        {
+          "iso": "f18",
+          "a0": 370,
+          "t": 219.4,
+          "tu": "min"
+        },
+        {
+          "raw": {
+            "a": 92.5,
+            "frac": 0.25
+          }
+        }
+      ],
+      [
+        "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        {
+          "iso": "i131",
+          "a0": 3700,
+          "t": 24.06,
+          "tu": "d"
+        },
+        {
+          "raw": {
+            "a": 462.5,
+            "halves": 3
+          }
+        }
+      ],
+      [
+        "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        {
+          "iso": "ga68",
+          "a0": 200,
+          "t": 30,
+          "tu": "min"
+        },
+        {
+          "raw": {
+            "a": 147.09
+          },
+          "tol": 0.1
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}
