@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-decaimento-radioativo · Elucenia · https://github.com/Elucenia/tool-decaimento-radioativo
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"decaimento-radioativo","title":"Decaimento radioativo","fields":[["iso","Radionuclídeo","sel",{"opts":{"tc99m":"Tecnécio-99m (6,01 h)","f18":"Flúor-18 (109,7 min)","i131":"Iodo-131 (8,02 dias)","i123":"Iodo-123 (13,2 h)","ga68":"Gálio-68 (67,7 min)","lu177":"Lutécio-177 (6,65 dias)"}}],["a0","Atividade inicial (MBq ou mCi)","num",{"min":0.001,"max":100000,"step":0.001,"unit":"MBq/mCi","ph":"740"}],["t","Tempo decorrido","num",{"min":0,"max":100000,"step":0.1,"unit":"","ph":"6"}],["tu","Unidade do tempo","radio",{"opts":{"min":"minutos","h":"horas","d":"dias"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
