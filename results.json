@@ -1,0 +1,449 @@
+{
+  "id": "decaimento-radioativo",
+  "at": "2026-10-05T17:29:17.490Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/decaimento-radioativo/calculator.js",
+    "bytes": 5447,
+    "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
+  },
+  "cases": [
+    {
+      "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+      "input": {
+        "iso": "tc99m",
+        "a0": 740,
+        "t": 6.01,
+        "tu": "h"
+      },
+      "obtained": {
+        "id": "decaimento-radioativo",
+        "main": [
+          "370",
+          ""
+        ],
+        "label": "Atividade restante de 99mTc (na unidade da atividade inicial)",
+        "raw": {
+          "a": 370,
+          "frac": 0.5,
+          "halves": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "370",
+          "obtained": "370",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.a",
+          "expected": 370,
+          "obtained": 370,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.frac",
+          "expected": 0.5,
+          "obtained": 0.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.halves",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a",
+          "expected": 370,
+          "obtained": 370,
+          "tolerance": 3.7e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.frac",
+          "expected": 0.5,
+          "obtained": 0.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.halves",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "370",
+          "obtained": "370",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+      "input": {
+        "iso": "f18",
+        "a0": 370,
+        "t": 219.4,
+        "tu": "min"
+      },
+      "obtained": {
+        "id": "decaimento-radioativo",
+        "main": [
+          "92,5",
+          ""
+        ],
+        "label": "Atividade restante de 18F (na unidade da atividade inicial)",
+        "raw": {
+          "a": 92.5,
+          "frac": 0.25,
+          "halves": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.a",
+          "expected": 92.5,
+          "obtained": 92.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.frac",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a",
+          "expected": 92.5,
+          "obtained": 92.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.frac",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.halves",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "92,5",
+          "obtained": "92,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+      "input": {
+        "iso": "i131",
+        "a0": 3700,
+        "t": 24.06,
+        "tu": "d"
+      },
+      "obtained": {
+        "id": "decaimento-radioativo",
+        "main": [
+          "463",
+          ""
+        ],
+        "label": "Atividade restante de 131I (na unidade da atividade inicial)",
+        "raw": {
+          "a": 462.5,
+          "frac": 0.125,
+          "halves": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.a",
+          "expected": 462.5,
+          "obtained": 462.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.halves",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a",
+          "expected": 462.5,
+          "obtained": 462.5,
+          "tolerance": 4.625e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.frac",
+          "expected": 0.125,
+          "obtained": 0.125,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.halves",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "463",
+          "obtained": "463",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+      "input": {
+        "iso": "ga68",
+        "a0": 200,
+        "t": 30,
+        "tu": "min"
+      },
+      "obtained": {
+        "id": "decaimento-radioativo",
+        "main": [
+          "147",
+          ""
+        ],
+        "label": "Atividade restante de 68Ga (na unidade da atividade inicial)",
+        "raw": {
+          "a": 147.1739284743179,
+          "frac": 0.7358696423715895,
+          "halves": 0.4424778761061947
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.a",
+          "expected": 147.09,
+          "obtained": 147.1739284743179,
+          "tolerance": 0.1,
+          "difference": 0.08392847431790074,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a",
+          "expected": 147.1739284743179,
+          "obtained": 147.1739284743179,
+          "tolerance": 1.4717392847431791e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.frac",
+          "expected": 0.7358696423715895,
+          "obtained": 0.7358696423715895,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.halves",
+          "expected": 0.4424778761061947,
+          "obtained": 0.4424778761061947,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "147",
+          "obtained": "147",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 30,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field iso",
+    "input": {
+      "a0": 740,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "iso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field iso",
+    "input": {
+      "iso": "",
+      "a0": 740,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "iso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option iso",
+    "input": {
+      "iso": "__ELUCENIA_INVALID_OPTION__",
+      "a0": 740,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "iso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field a0",
+    "input": {
+      "iso": "tc99m",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": "",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": "NaN",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": "Infinity",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": "1e309",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": "invalid",
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": {},
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": true,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": -0.999,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum a0",
+    "input": {
+      "iso": "tc99m",
+      "a0": 110000,
+      "t": 6.01,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "a0"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": "",
+      "tu": "h"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": "NaN",
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": "Infinity",
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": "1e309",
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": "invalid",
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": {},
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": true,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": -1,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum t",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": 110000,
+      "tu": "h"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "t"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tu",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": 6.01
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tu"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tu",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": 6.01,
+      "tu": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tu"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tu",
+    "input": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": 6.01,
+      "tu": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tu"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

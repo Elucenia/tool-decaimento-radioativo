@@ -1,6 +1,15 @@
 [
   {
-    "label": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+    "id": "decaimento-radioativo",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+    "originalInput": {
+      "iso": "tc99m",
+      "a0": 740,
+      "t": 6.01,
+      "tu": "h"
+    },
     "input": {
       "iso": "tc99m",
       "a0": 740,
@@ -15,16 +24,38 @@
       },
       "main": "370"
     },
-    "originalInput": {
-      "iso": "tc99m",
-      "a0": 740,
-      "t": 6.01,
-      "tu": "h"
+    "recordedResult": {
+      "main": [
+        "370",
+        ""
+      ],
+      "label": "Atividade restante de 99mTc (na unidade da atividade inicial)",
+      "raw": {
+        "a": 370,
+        "frac": 0.5,
+        "halves": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+    "id": "decaimento-radioativo",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+    "originalInput": {
+      "iso": "f18",
+      "a0": 370,
+      "t": 219.4,
+      "tu": "min"
+    },
     "input": {
       "iso": "f18",
       "a0": 370,
@@ -37,16 +68,38 @@
         "frac": 0.25
       }
     },
-    "originalInput": {
-      "iso": "f18",
-      "a0": 370,
-      "t": 219.4,
-      "tu": "min"
+    "recordedResult": {
+      "main": [
+        "92,5",
+        ""
+      ],
+      "label": "Atividade restante de 18F (na unidade da atividade inicial)",
+      "raw": {
+        "a": 92.5,
+        "frac": 0.25,
+        "halves": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+    "id": "decaimento-radioativo",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+    "originalInput": {
+      "iso": "i131",
+      "a0": 3700,
+      "t": 24.06,
+      "tu": "d"
+    },
     "input": {
       "iso": "i131",
       "a0": 3700,
@@ -59,16 +112,38 @@
         "halves": 3
       }
     },
-    "originalInput": {
-      "iso": "i131",
-      "a0": 3700,
-      "t": 24.06,
-      "tu": "d"
+    "recordedResult": {
+      "main": [
+        "463",
+        ""
+      ],
+      "label": "Atividade restante de 131I (na unidade da atividade inicial)",
+      "raw": {
+        "a": 462.5,
+        "frac": 0.125,
+        "halves": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+    "id": "decaimento-radioativo",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+    "originalInput": {
+      "iso": "ga68",
+      "a0": 200,
+      "t": 30,
+      "tu": "min"
+    },
     "input": {
       "iso": "ga68",
       "a0": 200,
@@ -81,12 +156,25 @@
       },
       "tol": 0.1
     },
-    "originalInput": {
-      "iso": "ga68",
-      "a0": 200,
-      "t": 30,
-      "tu": "min"
+    "recordedResult": {
+      "main": [
+        "147",
+        ""
+      ],
+      "label": "Atividade restante de 68Ga (na unidade da atividade inicial)",
+      "raw": {
+        "a": 147.1739284743179,
+        "frac": 0.7358696423715895,
+        "halves": 0.4424778761061947
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

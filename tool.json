@@ -5,12 +5,12 @@
     "short": "Atividade restante de um radiofármaco",
     "desc": "Calcula a atividade restante de um radionuclídeo após um tempo (A = A₀ · e^−λt), com meias-vidas de 99mTc, 18F, 131I, 123I, 68Ga e 177Lu.",
     "lead": "Corrige a atividade de um radiofármaco para o horário de administração ou de leitura, a partir da atividade calibrada e da meia-vida física.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-nuclear",
       "radiologia-e-diagnostico-por-imagem",
       "radioterapia"
     ],
-    "tier": 1,
     "fields": [
       [
         "iso",
@@ -22,8 +22,8 @@
             "f18": "Flúor-18 (109,7 min)",
             "i131": "Iodo-131 (8,02 dias)",
             "i123": "Iodo-123 (13,2 h)",
-            "ga68": "Gálio-68 (67,7 min)",
-            "lu177": "Lutécio-177 (6,65 dias)"
+            "ga68": "Gálio-68 (67,8 min)",
+            "lu177": "Lutécio-177 (6,64 dias)"
           }
         }
       ],
@@ -65,49 +65,6 @@
       ]
     ],
     "formula": "<p><strong>A = A<sub>0</sub> × e<sup>−λt</sup></strong>, com <strong>λ = ln 2 ÷ T<sub>½</sub></strong>; o mesmo que A = A<sub>0</sub> × (1/2)<sup>t ÷ T½</sup>.</p><p>O resultado sai na mesma unidade da atividade inicial (1 mCi = 37 MBq). Meias-vidas físicas da avaliação NUBASE2020, arredondadas.</p>",
-    "table": [
-      [
-        "Radionuclídeo",
-        "Meia-vida física",
-        "Uso principal"
-      ],
-      [
-        "<sup>99m</sup>Tc",
-        "6,01 h",
-        "Cintilografias (óssea, perfusão miocárdica, renal, tireoide)"
-      ],
-      [
-        "<sup>18</sup>F",
-        "109,7 min",
-        "PET (FDG, PSMA, fluoreto)"
-      ],
-      [
-        "<sup>131</sup>I",
-        "8,02 dias",
-        "Terapia de hipertireoidismo e câncer diferenciado de tireoide"
-      ],
-      [
-        "<sup>123</sup>I",
-        "13,2 h",
-        "Cintilografia de tireoide, MIBG"
-      ],
-      [
-        "<sup>68</sup>Ga",
-        "67,7 min",
-        "PET com DOTATATE e PSMA"
-      ],
-      [
-        "<sup>177</sup>Lu",
-        "6,65 dias",
-        "Terapia com radioligantes (DOTATATE, PSMA)"
-      ]
-    ],
-    "tips": [
-      "Depois de uma meia-vida resta 50%; de duas, 25%; de 10 meias-vidas, cerca de 0,1% (regra prática para decaimento de rejeitos).",
-      "A meia-vida <strong>física</strong> não é a efetiva: a eliminação biológica (urina, fezes) faz a atividade no corpo cair mais rápido, o que importa para dosimetria e orientação de radioproteção.",
-      "Com <sup>18</sup>F e <sup>68</sup>Ga, poucos minutos de atraso mudam bastante a atividade: corrija a dose para o horário real da injeção antes de calcular o SUV.",
-      "Para saber quanto calibrar ou encomendar, divida a atividade desejada no horário da injeção pela fração restante mostrada: A<sub>0</sub> = A ÷ (1/2)<sup>t ÷ T½</sup>."
-    ],
     "sources": [
       [
         "Kondev FG et al. The NUBASE2020 evaluation of nuclear physics properties. Chinese Physics C, 2021.",
@@ -116,6 +73,14 @@
       [
         "International Atomic Energy Agency (IAEA). Live Chart of Nuclides.",
         "https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html"
+      ],
+      [
+        "IAEA primary glossary,physical/biological/effective half-time",
+        "https://www-pub.iaea.org/MTCD/Publications/PDF/IAEA_SI_web.pdf"
+      ],
+      [
+        "NUBASE2020,published2021",
+        "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf"
       ]
     ],
     "cases": [
@@ -182,9 +147,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -193,17 +155,277 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:40:42.995Z",
+      "total": 270,
+      "passed": 270,
+      "evidencePath": "reports/review-20261003/nubase-rounded-presets-candidate-final23.json",
+      "evidenceSha256": "78c70304a346e03317f632759b6a1586d3ec51658176ac411600422b91bad73b",
+      "peerEvidencePath": "reports/review-20261003/independent-nubase-rounded-presets-publication-final23.json",
+      "peerEvidenceSha256": "dfb14c81df2c4842c3b08a5b520be0825a02ccb9341955316e82aae420f3881d",
+      "scope": "Power-of-two progression and time-unit equivalence with six explicitly compared, rounded NUBASE2020 presets. Two rounding corrections, Ga68=67.8min and Lu177=6.64days. These tests do not approve patient dosimetry, biological effective half-life or nuclear uncertainty propagation.",
+      "sources": [
+        {
+          "url": "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf",
+          "edition": "Kondev et al2021,NUBASE2020,TableI",
+          "doi": "10.1088/1674-1137/abddae",
+          "readScope": "Direct primary PDF reopened; introduction and exactly six named TableI entries compared. Parsed text read with page/line locators. Not all181 pages or nuclear data certified.",
+          "boundMeaning": "maxRoundingError is the decimal-rounding bound, not the primary uncertainty or a dosimetry tolerance."
+        },
+        {
+          "edition": "IAEA Basic Professional Training Course, ModuleI Nuclear physics and reactor theory, 2015",
+          "url": "https://gnssn.iaea.org/main/bptc/BPTC%20Module%20Documents/Module01%20Nuclear%20physics%20and%20reactor%20theory.pdf",
+          "locator": "PDFp18, exponential decay equation and Figure4.1 half-life progression",
+          "access": "Primary indexed equation and half-life figure checked on 2026-10-04. Direct PDF retrieval timed out; no complete PDF reading claimed.",
+          "scope": "Power-of-two half-life progression for the six explicitly documented rounded half-lives and time-unit equivalence. The rounded nuclear constants themselves and dosimetry are not independently certified by this oracle."
+        }
+      ],
+      "implementations": [
+        {
+          "id": "decaimento-radioativo",
+          "app": "website",
+          "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
+        },
+        {
+          "id": "decaimento-radioativo",
+          "app": "dashboard",
+          "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
+        },
+        {
+          "id": "decaimento-radioativo",
+          "app": "command-center",
+          "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
+        }
+      ],
+      "qualifications": [
+        "Prior270-vector arithmetic evidence is retained in its original report as historical evidence for the preceding rounded-preset edition. The newly persisted270 inputs bind the corrected current presets.",
+        "The original Ga68 regression retains expected147.09 and tolerance0.1, with its source caption explicitly historical. Four additional tight comparisons in the peer use the current67.8min preset and147.173928... MBq at30min, independently of that archived expectation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Decaimento físico exponencial; seis meias-vidas NUBASE2020 comparadas e arredondadas; 68Ga 67,8 min; 177Lu 6,64 dias; atividade na unidade original.",
+    "implementationVersion": "decaimento-radioativo@native-2026-10-04+430ba3bc70b1",
+    "currentMethodSource": "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "A = A 0 × e −λt , com λ = ln 2 ÷ T ½ ; o mesmo que A = A 0 × (1/2) t ÷ T½ . O resultado sai na mesma unidade da atividade inicial (1 mCi = 37 MBq). Meias-vidas físicas da avaliação NUBASE2020, arredondadas.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "iso",
+            "label": "Radionuclídeo",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "tc99m": "Tecnécio-99m (6,01 h)",
+              "f18": "Flúor-18 (109,7 min)",
+              "i131": "Iodo-131 (8,02 dias)",
+              "i123": "Iodo-123 (13,2 h)",
+              "ga68": "Gálio-68 (67,8 min)",
+              "lu177": "Lutécio-177 (6,64 dias)"
+            }
+          },
+          {
+            "key": "a0",
+            "label": "Atividade inicial (MBq ou mCi)",
+            "type": "num",
+            "min": 0.001,
+            "max": 100000,
+            "unit": "MBq/mCi",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "t",
+            "label": "Tempo decorrido",
+            "type": "num",
+            "min": 0,
+            "max": 100000,
+            "unit": "",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tu",
+            "label": "Unidade do tempo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "min": "minutos",
+              "h": "horas",
+              "d": "dias"
+            }
+          }
+        ],
+        "hash": "dc6d0cf859f2bd73a50cebb8bbfa807da379986b378785a15cda928cfd87420c"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Kondev FG et al. The NUBASE2020 evaluation of nuclear physics properties. Chinese Physics C, 2021.",
+          "url": "https://doi.org/10.1088/1674-1137/abddae",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "reason": "Exact DOI/PMID or exact publication title not found in Europe PMC"
+        },
+        {
+          "citation": "International Atomic Energy Agency (IAEA). Live Chart of Nuclides.",
+          "url": "https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "reason": "Institutional or legislative URL requires individual browser review; not a publication DOI."
+        },
+        {
+          "url": "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf",
+          "edition": "NUBASE2020, Chinese Physics C 45, 030001 (2021), DOI 10.1088/1674-1137/abddae",
+          "class": "primary-dataset-publication-text-read",
+          "conferred": "Dataset identity and publication edition confirmed. All nuclide half-lives were not independently compared in this edition audit.",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:40:42.995Z",
+        "total": 270,
+        "passed": 270,
+        "evidencePath": "reports/review-20261003/nubase-rounded-presets-candidate-final23.json",
+        "scope": "Power-of-two progression and time-unit equivalence with six explicitly compared, rounded NUBASE2020 presets. Two rounding corrections, Ga68=67.8min and Lu177=6.64days. These tests do not approve patient dosimetry, biological effective half-life or nuclear uncertainty propagation.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "9241927ce2325843f07aaca58f49cbe6adb2d17b80ee7148e969490b3169634d"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303",
+      "documentaryEditionAmendment": {
+        "recordedAt": "2026-10-04T13:40:42.995Z",
+        "source": "Decaimento físico exponencial; seis meias-vidas NUBASE2020 comparadas e arredondadas; 68Ga 67,8 min; 177Lu 6,64 dias; atividade na unidade original.",
+        "scope": "Explicit attribution of the implemented variant; not full-method or clinical approval."
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "changes": [
+            "inputContract"
+          ],
+          "priorImplementationVersion": "decaimento-radioativo@native-2026-10-04+430ba3bc70b1",
+          "priorImplementationHash": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303",
+          "priorInputContract": {
+            "fields": [
+              {
+                "key": "iso",
+                "label": "Radionuclídeo",
+                "type": "sel",
+                "optional": false,
+                "options": {
+                  "tc99m": "Tecnécio-99m (6,01 h)",
+                  "f18": "Flúor-18 (109,7 min)",
+                  "i131": "Iodo-131 (8,02 dias)",
+                  "i123": "Iodo-123 (13,2 h)",
+                  "ga68": "Gálio-68 (67,8 min)",
+                  "lu177": "Lutécio-177 (6,64 dias)"
+                }
+              },
+              {
+                "key": "a0",
+                "label": "Atividade inicial (MBq ou mCi)",
+                "type": "num",
+                "min": 0.001,
+                "max": 100000,
+                "unit": "MBq/mCi",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "t",
+                "label": "Tempo decorrido",
+                "type": "num",
+                "min": 0,
+                "max": 100000,
+                "unit": "",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "tu",
+                "label": "Unidade do tempo",
+                "type": "radio",
+                "optional": false,
+                "options": {
+                  "min": "minutos",
+                  "h": "horas",
+                  "d": "dias"
+                }
+              }
+            ],
+            "hash": "ee2fb60c683a948b0a7ab8650dfd785393f6c43736f4286f23e19caeeb427245"
+          },
+          "priorImplementedVariant": "A = A 0 × e −λt , com λ = ln 2 ÷ T ½ ; o mesmo que A = A 0 × (1/2) t ÷ T½ . O resultado sai na mesma unidade da atividade inicial (1 mCi = 37 MBq). Meias-vidas físicas da avaliação NUBASE2020, arredondadas.",
+          "explicitMethodVersion": "Decaimento físico exponencial; seis meias-vidas NUBASE2020 comparadas e arredondadas; 68Ga 67,8 min; 177Lu 6,64 dias; atividade na unidade original.",
+          "sourceEvidenceUnchanged": true,
+          "independentArithmeticUnchanged": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        }
+      ]
+    },
+    "limits": "Este modelo calcula apenas decaimento físico exponencial de um radionuclídeo, com atividade inicial e final na mesma unidade e tempo compatível com a meia-vida. Não inclui eliminação biológica, meia-vida efetiva, formação por radionuclídeos pais nem dose absorvida. Os seis presets foram comparados às entradas correspondentes da NUBASE2020 e arredondados: 99mTc 6,01 h; 18F 109,7 min; 131I 8,02 dias; 123I 13,2 h; 68Ga 67,8 min; 177Lu 6,64 dias. Identifique o estado nuclear. O arredondamento dos presets não incorpora as incertezas da avaliação e não certifica dados metrológicos nem dosimetria do paciente.",
+    "limitsEvidence": {
+      "status": "direct-primary-definitions-and-six-database-entries-read",
+      "sources": [
+        {
+          "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/IAEA_SI_web.pdf",
+          "edition": "IAEA primary glossary,physical/biological/effective half-time",
+          "readScope": "Direct glossary page67 definitions and first-order condition read;not whole manual."
+        },
+        {
+          "url": "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf",
+          "edition": "NUBASE2020,published2021",
+          "readScope": "Direct original introduction/section2.3 and TableI six entries read:18F109.734min,99Tcm6.0066h,131I8.0249d,123I13.2232h,68Ga67.842min,177Lu6.6443d. Preset comparison recorded; no complete181page review. Reopened direct TableI in this amendment: page24 line1429,47 line3389,66 line5133,82 line6543,90 line7214,122 line9999; all six preset decimal roundings compared. No full181-page/dosimetry claim."
+        }
+      ],
+      "populationScope": "Single radionuclide physical exponential decay, not a patient biokinetic/dose model.",
+      "remainingChecks": [
+        "No absorbed-dose or biologic/effective half-time validation.",
+        "No complete nuclear database conformance or uncertainty propagation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/decaimento-radioativo/calculator.js",
+    "bytes": 5447,
+    "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "8027fba975aab5be14ee51f98c9c0bf642506cd41c478e25baae3c76522fb5db",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 270,
+      "sha256": "cc3ee079c6770265d261e6bc8825a285820344809878a0f4d022ed397f54b813",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
