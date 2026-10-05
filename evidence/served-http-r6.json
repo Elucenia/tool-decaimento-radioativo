@@ -1,0 +1,938 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "decaimento-radioativo",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/decaimento-radioativo/calculator.js",
+    "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303",
+    "bytes": 5447
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "decaimento-radioativo",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+      "originalInput": {
+        "iso": "tc99m",
+        "a0": 740,
+        "t": 6.01,
+        "tu": "h"
+      },
+      "input": {
+        "iso": "tc99m",
+        "a0": 740,
+        "t": 6.01,
+        "tu": "h"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "a": 370,
+          "frac": 0.5,
+          "halves": 1
+        },
+        "main": "370"
+      },
+      "recordedResult": {
+        "main": [
+          "370",
+          ""
+        ],
+        "label": "Atividade restante de 99mTc (na unidade da atividade inicial)",
+        "raw": {
+          "a": 370,
+          "frac": 0.5,
+          "halves": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "iso": "tc99m",
+            "a0": 740,
+            "t": 6.01,
+            "tu": "h"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+          "startedAt": "2026-10-05T17:36:37.747Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "decaimento-radioativo",
+              "main": [
+                "370",
+                ""
+              ],
+              "label": "Atividade restante de 99mTc (na unidade da atividade inicial)",
+              "raw": {
+                "a": 370,
+                "frac": 0.5,
+                "halves": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "97c23dd01339ef96f619b6f55853c15588973be8bca1dd915afa4f7514191937",
+          "bytes": 206,
+          "elapsedMs": 5.892799999994168
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "startedAt": "2026-10-05T17:36:37.747Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "decaimento-radioativo",
+            "main": [
+              "370",
+              ""
+            ],
+            "label": "Atividade restante de 99mTc (na unidade da atividade inicial)",
+            "raw": {
+              "a": 370,
+              "frac": 0.5,
+              "halves": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "97c23dd01339ef96f619b6f55853c15588973be8bca1dd915afa4f7514191937",
+        "bytes": 206,
+        "elapsedMs": 5.892799999994168
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "370",
+            "obtained": "370",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.a",
+            "expected": 370,
+            "obtained": 370,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.frac",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.halves",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": 370,
+            "obtained": 370,
+            "tolerance": 3.7e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.frac",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.halves",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "370",
+            "obtained": "370",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "decaimento-radioativo",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+      "originalInput": {
+        "iso": "f18",
+        "a0": 370,
+        "t": 219.4,
+        "tu": "min"
+      },
+      "input": {
+        "iso": "f18",
+        "a0": 370,
+        "t": 219.4,
+        "tu": "min"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "a": 92.5,
+          "frac": 0.25
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "92,5",
+          ""
+        ],
+        "label": "Atividade restante de 18F (na unidade da atividade inicial)",
+        "raw": {
+          "a": 92.5,
+          "frac": 0.25,
+          "halves": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "iso": "f18",
+            "a0": 370,
+            "t": 219.4,
+            "tu": "min"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+          "startedAt": "2026-10-05T17:36:38.047Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "decaimento-radioativo",
+              "main": [
+                "92,5",
+                ""
+              ],
+              "label": "Atividade restante de 18F (na unidade da atividade inicial)",
+              "raw": {
+                "a": 92.5,
+                "frac": 0.25,
+                "halves": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "674f7a2798acc7ae873441045eadfaffe99a17d9dedea8bbf776feb9881465d0",
+          "bytes": 207,
+          "elapsedMs": 4.2995000000009895
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "startedAt": "2026-10-05T17:36:38.047Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "decaimento-radioativo",
+            "main": [
+              "92,5",
+              ""
+            ],
+            "label": "Atividade restante de 18F (na unidade da atividade inicial)",
+            "raw": {
+              "a": 92.5,
+              "frac": 0.25,
+              "halves": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "674f7a2798acc7ae873441045eadfaffe99a17d9dedea8bbf776feb9881465d0",
+        "bytes": 207,
+        "elapsedMs": 4.2995000000009895
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.a",
+            "expected": 92.5,
+            "obtained": 92.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.frac",
+            "expected": 0.25,
+            "obtained": 0.25,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": 92.5,
+            "obtained": 92.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.frac",
+            "expected": 0.25,
+            "obtained": 0.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.halves",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "92,5",
+            "obtained": "92,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "decaimento-radioativo",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+      "originalInput": {
+        "iso": "i131",
+        "a0": 3700,
+        "t": 24.06,
+        "tu": "d"
+      },
+      "input": {
+        "iso": "i131",
+        "a0": 3700,
+        "t": 24.06,
+        "tu": "d"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "a": 462.5,
+          "halves": 3
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "463",
+          ""
+        ],
+        "label": "Atividade restante de 131I (na unidade da atividade inicial)",
+        "raw": {
+          "a": 462.5,
+          "frac": 0.125,
+          "halves": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "iso": "i131",
+            "a0": 3700,
+            "t": 24.06,
+            "tu": "d"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+          "startedAt": "2026-10-05T17:36:38.360Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "decaimento-radioativo",
+              "main": [
+                "463",
+                ""
+              ],
+              "label": "Atividade restante de 131I (na unidade da atividade inicial)",
+              "raw": {
+                "a": 462.5,
+                "frac": 0.125,
+                "halves": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e56f68f3f08a891b8a4ed9a63942a398aed7a8689d9dfb9d130afe78a17b1c7a",
+          "bytes": 209,
+          "elapsedMs": 2.792300000000978
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "startedAt": "2026-10-05T17:36:38.360Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "decaimento-radioativo",
+            "main": [
+              "463",
+              ""
+            ],
+            "label": "Atividade restante de 131I (na unidade da atividade inicial)",
+            "raw": {
+              "a": 462.5,
+              "frac": 0.125,
+              "halves": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e56f68f3f08a891b8a4ed9a63942a398aed7a8689d9dfb9d130afe78a17b1c7a",
+        "bytes": 209,
+        "elapsedMs": 2.792300000000978
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.a",
+            "expected": 462.5,
+            "obtained": 462.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.halves",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": 462.5,
+            "obtained": 462.5,
+            "tolerance": 4.625e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.frac",
+            "expected": 0.125,
+            "obtained": 0.125,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.halves",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "463",
+            "obtained": "463",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "decaimento-radioativo",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+      "originalInput": {
+        "iso": "ga68",
+        "a0": 200,
+        "t": 30,
+        "tu": "min"
+      },
+      "input": {
+        "iso": "ga68",
+        "a0": 200,
+        "t": 30,
+        "tu": "min"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "a": 147.09
+        },
+        "tol": 0.1
+      },
+      "recordedResult": {
+        "main": [
+          "147",
+          ""
+        ],
+        "label": "Atividade restante de 68Ga (na unidade da atividade inicial)",
+        "raw": {
+          "a": 147.1739284743179,
+          "frac": 0.7358696423715895,
+          "halves": 0.4424778761061947
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "iso": "ga68",
+            "a0": 200,
+            "t": 30,
+            "tu": "min"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+          "startedAt": "2026-10-05T17:36:38.673Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "decaimento-radioativo",
+              "main": [
+                "147",
+                ""
+              ],
+              "label": "Atividade restante de 68Ga (na unidade da atividade inicial)",
+              "raw": {
+                "a": 147.1739284743179,
+                "frac": 0.7358696423715895,
+                "halves": 0.4424778761061947
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "629ae40fa5f1aa42a81a053f638a14a21abff644eae48a05a01272e983629152",
+          "bytes": 251,
+          "elapsedMs": 5.093000000000757
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/decaimento-radioativo/calculate",
+        "startedAt": "2026-10-05T17:36:38.673Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "decaimento-radioativo",
+            "main": [
+              "147",
+              ""
+            ],
+            "label": "Atividade restante de 68Ga (na unidade da atividade inicial)",
+            "raw": {
+              "a": 147.1739284743179,
+              "frac": 0.7358696423715895,
+              "halves": 0.4424778761061947
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "629ae40fa5f1aa42a81a053f638a14a21abff644eae48a05a01272e983629152",
+        "bytes": 251,
+        "elapsedMs": 5.093000000000757
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.a",
+            "expected": 147.09,
+            "obtained": 147.1739284743179,
+            "tolerance": 0.1,
+            "difference": 0.08392847431790074,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": 147.1739284743179,
+            "obtained": 147.1739284743179,
+            "tolerance": 1.4717392847431791e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.frac",
+            "expected": 0.7358696423715895,
+            "obtained": 0.7358696423715895,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.halves",
+            "expected": 0.4424778761061947,
+            "obtained": 0.4424778761061947,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "147",
+            "obtained": "147",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
