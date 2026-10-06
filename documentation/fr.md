@@ -90,3 +90,51 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+50,0% de l’activité initiale après 1,00 demi-vie(s)
+
+| Détails du résultat | |
+| --- | --- |
+| Demi-vie physique utilisée | 6,01 h |
+| Constante de décroissance (λ) | 0,1153 par heure |
+| Temps écoulé | 6,01 h |
+
+
+### 2
+
+25,0% de l’activité initiale après 2,00 demi-vie(s)
+
+| Détails du résultat | |
+| --- | --- |
+| Demi-vie physique utilisée | 109,7 min |
+| Constante de décroissance (λ) | 0,3791 par heure |
+| Temps écoulé | 3,66 h |
+
+
+### 3
+
+12,5% de l’activité initiale après 3,00 demi-vie(s)
+
+| Détails du résultat | |
+| --- | --- |
+| Demi-vie physique utilisée | 8,02 jours |
+| Constante de décroissance (λ) | 0,0036 par heure |
+| Temps écoulé | 577,44 h |
+
+
+### 4
+
+73,6% de l’activité initiale après 0,44 demi-vie(s)
+
+| Détails du résultat | |
+| --- | --- |
+| Demi-vie physique utilisée | 67,8 min |
+| Constante de décroissance (λ) | 0,6134 par heure |
+| Temps écoulé | 0,50 h |
+

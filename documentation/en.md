@@ -90,3 +90,51 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+50.0% of the initial activity after 1.00 half-life(s)
+
+| Result details | |
+| --- | --- |
+| Physical half-life used | 6.01 h |
+| Decay constant (λ) | 0.1153 per hour |
+| Elapsed time | 6.01 h |
+
+
+### 2
+
+25.0% of the initial activity after 2.00 half-life(s)
+
+| Result details | |
+| --- | --- |
+| Physical half-life used | 109.7 min |
+| Decay constant (λ) | 0.3791 per hour |
+| Elapsed time | 3.66 h |
+
+
+### 3
+
+12.5% of the initial activity after 3.00 half-life(s)
+
+| Result details | |
+| --- | --- |
+| Physical half-life used | 8.02 days |
+| Decay constant (λ) | 0.0036 per hour |
+| Elapsed time | 577.44 h |
+
+
+### 4
+
+73.6% of the initial activity after 0.44 half-life(s)
+
+| Result details | |
+| --- | --- |
+| Physical half-life used | 67.8 min |
+| Decay constant (λ) | 0.6134 per hour |
+| Elapsed time | 0.50 h |
+

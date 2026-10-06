@@ -1,0 +1,2440 @@
+{
+  "id": "decaimento-radioativo",
+  "implementationVersion": "decaimento-radioativo@native-2026-10-05+71e9983143d3",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Meia-vida física usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de decaimento (λ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,1153 por hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo decorrido",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50,0% da atividade inicial após 1,00 meia(s)-vida(s)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Meia-vida física usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "109,7 min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de decaimento (λ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,3791 por hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo decorrido",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,66 h",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25,0% da atividade inicial após 2,00 meia(s)-vida(s)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Meia-vida física usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "8,02 dias",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de decaimento (λ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,0036 por hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo decorrido",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "577,44 h",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12,5% da atividade inicial após 3,00 meia(s)-vida(s)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Meia-vida física usada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "67,8 min",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de decaimento (λ)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,6134 por hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo decorrido",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,50 h",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73,6% da atividade inicial após 0,44 meia(s)-vida(s)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Physical half-life used",
+                "locale": "en",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "en",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Decay constant (λ)",
+                "locale": "en",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.1153 per hour",
+                "locale": "en",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Elapsed time",
+                "locale": "en",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "en",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50.0% of the initial activity after 1.00 half-life(s)",
+            "locale": "en",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Physical half-life used",
+                "locale": "en",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109.7 min",
+                "locale": "en",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Decay constant (λ)",
+                "locale": "en",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.3791 per hour",
+                "locale": "en",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Elapsed time",
+                "locale": "en",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3.66 h",
+                "locale": "en",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25.0% of the initial activity after 2.00 half-life(s)",
+            "locale": "en",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Physical half-life used",
+                "locale": "en",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8.02 days",
+                "locale": "en",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Decay constant (λ)",
+                "locale": "en",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.0036 per hour",
+                "locale": "en",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Elapsed time",
+                "locale": "en",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577.44 h",
+                "locale": "en",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12.5% of the initial activity after 3.00 half-life(s)",
+            "locale": "en",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Physical half-life used",
+                "locale": "en",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67.8 min",
+                "locale": "en",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Decay constant (λ)",
+                "locale": "en",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.6134 per hour",
+                "locale": "en",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Elapsed time",
+                "locale": "en",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0.50 h",
+                "locale": "en",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73.6% of the initial activity after 0.44 half-life(s)",
+            "locale": "en",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vida media física utilizada",
+                "locale": "es",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "es",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de desintegración (λ)",
+                "locale": "es",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,1153 por hora",
+                "locale": "es",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tiempo transcurrido",
+                "locale": "es",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "es",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50,0% de la actividad inicial después de 1,00 vida(s) media(s)",
+            "locale": "es",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vida media física utilizada",
+                "locale": "es",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109,7 min",
+                "locale": "es",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de desintegración (λ)",
+                "locale": "es",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,3791 por hora",
+                "locale": "es",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tiempo transcurrido",
+                "locale": "es",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3,66 h",
+                "locale": "es",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25,0% de la actividad inicial después de 2,00 vida(s) media(s)",
+            "locale": "es",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vida media física utilizada",
+                "locale": "es",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8,02 días",
+                "locale": "es",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de desintegración (λ)",
+                "locale": "es",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,0036 por hora",
+                "locale": "es",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tiempo transcurrido",
+                "locale": "es",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577,44 h",
+                "locale": "es",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12,5% de la actividad inicial después de 3,00 vida(s) media(s)",
+            "locale": "es",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vida media física utilizada",
+                "locale": "es",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67,8 min",
+                "locale": "es",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de desintegración (λ)",
+                "locale": "es",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,6134 por hora",
+                "locale": "es",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tiempo transcurrido",
+                "locale": "es",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0,50 h",
+                "locale": "es",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73,6% de la actividad inicial después de 0,44 vida(s) media(s)",
+            "locale": "es",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Demi-vie physique utilisée",
+                "locale": "fr",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "fr",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de décroissance (λ)",
+                "locale": "fr",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,1153 par heure",
+                "locale": "fr",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Temps écoulé",
+                "locale": "fr",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "fr",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50,0% de l’activité initiale après 1,00 demi-vie(s)",
+            "locale": "fr",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Demi-vie physique utilisée",
+                "locale": "fr",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109,7 min",
+                "locale": "fr",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de décroissance (λ)",
+                "locale": "fr",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,3791 par heure",
+                "locale": "fr",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Temps écoulé",
+                "locale": "fr",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3,66 h",
+                "locale": "fr",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25,0% de l’activité initiale après 2,00 demi-vie(s)",
+            "locale": "fr",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Demi-vie physique utilisée",
+                "locale": "fr",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8,02 jours",
+                "locale": "fr",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de décroissance (λ)",
+                "locale": "fr",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,0036 par heure",
+                "locale": "fr",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Temps écoulé",
+                "locale": "fr",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577,44 h",
+                "locale": "fr",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12,5% de l’activité initiale après 3,00 demi-vie(s)",
+            "locale": "fr",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Demi-vie physique utilisée",
+                "locale": "fr",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67,8 min",
+                "locale": "fr",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Constante de décroissance (λ)",
+                "locale": "fr",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,6134 par heure",
+                "locale": "fr",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Temps écoulé",
+                "locale": "fr",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0,50 h",
+                "locale": "fr",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73,6% de l’activité initiale après 0,44 demi-vie(s)",
+            "locale": "fr",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete physikalische Halbwertszeit",
+                "locale": "de",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "de",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Zerfallskonstante (λ)",
+                "locale": "de",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,1153 pro Stunde",
+                "locale": "de",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verstrichene Zeit",
+                "locale": "de",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "de",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50,0% der Anfangsaktivität nach 1,00 Halbwertszeit(en)",
+            "locale": "de",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete physikalische Halbwertszeit",
+                "locale": "de",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109,7 min",
+                "locale": "de",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Zerfallskonstante (λ)",
+                "locale": "de",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,3791 pro Stunde",
+                "locale": "de",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verstrichene Zeit",
+                "locale": "de",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3,66 h",
+                "locale": "de",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25,0% der Anfangsaktivität nach 2,00 Halbwertszeit(en)",
+            "locale": "de",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete physikalische Halbwertszeit",
+                "locale": "de",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8,02 Tage",
+                "locale": "de",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Zerfallskonstante (λ)",
+                "locale": "de",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,0036 pro Stunde",
+                "locale": "de",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verstrichene Zeit",
+                "locale": "de",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577,44 h",
+                "locale": "de",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12,5% der Anfangsaktivität nach 3,00 Halbwertszeit(en)",
+            "locale": "de",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verwendete physikalische Halbwertszeit",
+                "locale": "de",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67,8 min",
+                "locale": "de",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Zerfallskonstante (λ)",
+                "locale": "de",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,6134 pro Stunde",
+                "locale": "de",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Verstrichene Zeit",
+                "locale": "de",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0,50 h",
+                "locale": "de",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73,6% der Anfangsaktivität nach 0,44 Halbwertszeit(en)",
+            "locale": "de",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Emivita fisica utilizzata",
+                "locale": "it",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "it",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Costante di decadimento (λ)",
+                "locale": "it",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,1153 all’ora",
+                "locale": "it",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo trascorso",
+                "locale": "it",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6,01 h",
+                "locale": "it",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "50,0% dell’attività iniziale dopo 1,00 emivita/e",
+            "locale": "it",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Emivita fisica utilizzata",
+                "locale": "it",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109,7 min",
+                "locale": "it",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Costante di decadimento (λ)",
+                "locale": "it",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,3791 all’ora",
+                "locale": "it",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo trascorso",
+                "locale": "it",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3,66 h",
+                "locale": "it",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "25,0% dell’attività iniziale dopo 2,00 emivita/e",
+            "locale": "it",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Emivita fisica utilizzata",
+                "locale": "it",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8,02 giorni",
+                "locale": "it",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Costante di decadimento (λ)",
+                "locale": "it",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,0036 all’ora",
+                "locale": "it",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo trascorso",
+                "locale": "it",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577,44 h",
+                "locale": "it",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "12,5% dell’attività iniziale dopo 3,00 emivita/e",
+            "locale": "it",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Emivita fisica utilizzata",
+                "locale": "it",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67,8 min",
+                "locale": "it",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Costante di decadimento (λ)",
+                "locale": "it",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0,6134 all’ora",
+                "locale": "it",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Tempo trascorso",
+                "locale": "it",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0,50 h",
+                "locale": "it",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "73,6% dell’attività iniziale dopo 0,44 emivita/e",
+            "locale": "it",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نصف العمر الفيزيائي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "٦٫٠١ h",
+                "locale": "ar",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ثابت الاضمحلال (λ)",
+                "locale": "ar",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "٠٫١١٥٣ في الساعة",
+                "locale": "ar",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوقت المنقضي",
+                "locale": "ar",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "٦٫٠١ h",
+                "locale": "ar",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٥٠٫٠% من النشاط الابتدائي بعد ١٫٠٠ نصف عمر",
+            "locale": "ar",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نصف العمر الفيزيائي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "١٠٩٫٧ min",
+                "locale": "ar",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ثابت الاضمحلال (λ)",
+                "locale": "ar",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "٠٫٣٧٩١ في الساعة",
+                "locale": "ar",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوقت المنقضي",
+                "locale": "ar",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "٣٫٦٦ h",
+                "locale": "ar",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٢٥٫٠% من النشاط الابتدائي بعد ٢٫٠٠ نصف عمر",
+            "locale": "ar",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نصف العمر الفيزيائي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "٨٫٠٢ يوم",
+                "locale": "ar",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ثابت الاضمحلال (λ)",
+                "locale": "ar",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "٠٫٠٠٣٦ في الساعة",
+                "locale": "ar",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوقت المنقضي",
+                "locale": "ar",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "٥٧٧٫٤٤ h",
+                "locale": "ar",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١٢٫٥% من النشاط الابتدائي بعد ٣٫٠٠ نصف عمر",
+            "locale": "ar",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نصف العمر الفيزيائي المستخدم",
+                "locale": "ar",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "٦٧٫٨ min",
+                "locale": "ar",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ثابت الاضمحلال (λ)",
+                "locale": "ar",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "٠٫٦١٣٤ في الساعة",
+                "locale": "ar",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوقت المنقضي",
+                "locale": "ar",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "٠٫٥٠ h",
+                "locale": "ar",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٧٣٫٦% من النشاط الابتدائي بعد ٠٫٤٤ نصف عمر",
+            "locale": "ar",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用物理半衰期",
+                "locale": "zh",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "zh",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "衰变常数（λ）",
+                "locale": "zh",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "每小时0.1153",
+                "locale": "zh",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经过时间",
+                "locale": "zh",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "zh",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "经过1.00个半衰期后为初始活度的50.0%",
+            "locale": "zh",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用物理半衰期",
+                "locale": "zh",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109.7 min",
+                "locale": "zh",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "衰变常数（λ）",
+                "locale": "zh",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "每小时0.3791",
+                "locale": "zh",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经过时间",
+                "locale": "zh",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3.66 h",
+                "locale": "zh",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "经过2.00个半衰期后为初始活度的25.0%",
+            "locale": "zh",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用物理半衰期",
+                "locale": "zh",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8.02天",
+                "locale": "zh",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "衰变常数（λ）",
+                "locale": "zh",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "每小时0.0036",
+                "locale": "zh",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经过时间",
+                "locale": "zh",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577.44 h",
+                "locale": "zh",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "经过3.00个半衰期后为初始活度的12.5%",
+            "locale": "zh",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "所用物理半衰期",
+                "locale": "zh",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67.8 min",
+                "locale": "zh",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "衰变常数（λ）",
+                "locale": "zh",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "每小时0.6134",
+                "locale": "zh",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "经过时间",
+                "locale": "zh",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0.50 h",
+                "locale": "zh",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "经过0.44个半衰期后为初始活度的73.6%",
+            "locale": "zh",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した物理的半減期",
+                "locale": "ja",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "ja",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "崩壊定数（λ）",
+                "locale": "ja",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "1時間あたり0.1153",
+                "locale": "ja",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経過時間",
+                "locale": "ja",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "ja",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00半減期後の初期活性の50.0%",
+            "locale": "ja",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した物理的半減期",
+                "locale": "ja",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109.7 min",
+                "locale": "ja",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "崩壊定数（λ）",
+                "locale": "ja",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "1時間あたり0.3791",
+                "locale": "ja",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経過時間",
+                "locale": "ja",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3.66 h",
+                "locale": "ja",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2.00半減期後の初期活性の25.0%",
+            "locale": "ja",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した物理的半減期",
+                "locale": "ja",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8.02日",
+                "locale": "ja",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "崩壊定数（λ）",
+                "locale": "ja",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "1時間あたり0.0036",
+                "locale": "ja",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経過時間",
+                "locale": "ja",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577.44 h",
+                "locale": "ja",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3.00半減期後の初期活性の12.5%",
+            "locale": "ja",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "使用した物理的半減期",
+                "locale": "ja",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67.8 min",
+                "locale": "ja",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "崩壊定数（λ）",
+                "locale": "ja",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "1時間あたり0.6134",
+                "locale": "ja",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "経過時間",
+                "locale": "ja",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0.50 h",
+                "locale": "ja",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "0.44半減期後の初期活性の73.6%",
+            "locale": "ja",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "99mTc, 740 MBq após 6,01 h (1 meia-vida): 370 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "उपयोग की गई भौतिक अर्ध-आयु",
+                "locale": "hi",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "hi",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अपघटन स्थिरांक (λ)",
+                "locale": "hi",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.1153 प्रति घंटा",
+                "locale": "hi",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.1153
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "बीता हुआ समय",
+                "locale": "hi",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "6.01 h",
+                "locale": "hi",
+                "template": "documented-authored-51952f8c4a0e0a64174f"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1.00 अर्ध-आयु(ओं) के बाद प्रारंभिक सक्रियता का 50.0%",
+            "locale": "hi",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              50,
+              1
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "18F, 370 MBq após 219,4 min (2 meias-vidas): 92,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "उपयोग की गई भौतिक अर्ध-आयु",
+                "locale": "hi",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "109.7 min",
+                "locale": "hi",
+                "template": "documented-authored-75c5fe7a9c1b0251ca75"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अपघटन स्थिरांक (λ)",
+                "locale": "hi",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.3791 प्रति घंटा",
+                "locale": "hi",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.3791
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "बीता हुआ समय",
+                "locale": "hi",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "3.66 h",
+                "locale": "hi",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  3.66
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2.00 अर्ध-आयु(ओं) के बाद प्रारंभिक सक्रियता का 25.0%",
+            "locale": "hi",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              25,
+              2
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "131I, 3.700 MBq após 24,06 dias (3 meias-vidas): 462,5 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "उपयोग की गई भौतिक अर्ध-आयु",
+                "locale": "hi",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "8.02 दिन",
+                "locale": "hi",
+                "template": "documented-authored-2fcf9bbf4e13fa2af960"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अपघटन स्थिरांक (λ)",
+                "locale": "hi",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.0036 प्रति घंटा",
+                "locale": "hi",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.0036
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "बीता हुआ समय",
+                "locale": "hi",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "577.44 h",
+                "locale": "hi",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  577.44
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3.00 अर्ध-आयु(ओं) के बाद प्रारंभिक सक्रियता का 12.5%",
+            "locale": "hi",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              12.5,
+              3
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "68Ga, 200 MBq após 30 min: 200 × 0,5^(30/67,7) = 147,1 MBq",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "उपयोग की गई भौतिक अर्ध-आयु",
+                "locale": "hi",
+                "template": "documented-authored-d2f9c43e5725ec2906a9"
+              },
+              "value": {
+                "text": "67.8 min",
+                "locale": "hi",
+                "template": "documented-authored-8d21236cf7c66424d6e7"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अपघटन स्थिरांक (λ)",
+                "locale": "hi",
+                "template": "documented-authored-531698d411b62453f806"
+              },
+              "value": {
+                "text": "0.6134 प्रति घंटा",
+                "locale": "hi",
+                "template": "documented-authored-f2b44c1a728621841b80",
+                "sourceNumbers": [
+                  0.6134
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "बीता हुआ समय",
+                "locale": "hi",
+                "template": "documented-authored-e77b51a95ead622f906c"
+              },
+              "value": {
+                "text": "0.50 h",
+                "locale": "hi",
+                "template": "documented-authored-796029cae14a2c10c713",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "0.44 अर्ध-आयु(ओं) के बाद प्रारंभिक सक्रियता का 73.6%",
+            "locale": "hi",
+            "template": "documented-authored-f7e12fd1a08b008f0ddd",
+            "sourceNumbers": [
+              73.6,
+              0.44
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

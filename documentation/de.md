@@ -90,3 +90,51 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+50,0% der Anfangsaktivität nach 1,00 Halbwertszeit(en)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete physikalische Halbwertszeit | 6,01 h |
+| Zerfallskonstante (λ) | 0,1153 pro Stunde |
+| Verstrichene Zeit | 6,01 h |
+
+
+### 2
+
+25,0% der Anfangsaktivität nach 2,00 Halbwertszeit(en)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete physikalische Halbwertszeit | 109,7 min |
+| Zerfallskonstante (λ) | 0,3791 pro Stunde |
+| Verstrichene Zeit | 3,66 h |
+
+
+### 3
+
+12,5% der Anfangsaktivität nach 3,00 Halbwertszeit(en)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete physikalische Halbwertszeit | 8,02 Tage |
+| Zerfallskonstante (λ) | 0,0036 pro Stunde |
+| Verstrichene Zeit | 577,44 h |
+
+
+### 4
+
+73,6% der Anfangsaktivität nach 0,44 Halbwertszeit(en)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verwendete physikalische Halbwertszeit | 67,8 min |
+| Zerfallskonstante (λ) | 0,6134 pro Stunde |
+| Verstrichene Zeit | 0,50 h |
+

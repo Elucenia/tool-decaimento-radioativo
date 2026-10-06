@@ -208,7 +208,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Decaimento físico exponencial; seis meias-vidas NUBASE2020 comparadas e arredondadas; 68Ga 67,8 min; 177Lu 6,64 dias; atividade na unidade original.",
-    "implementationVersion": "decaimento-radioativo@native-2026-10-04+430ba3bc70b1",
+    "implementationVersion": "decaimento-radioativo@native-2026-10-05+71e9983143d3",
     "currentMethodSource": "https://www-nds.iaea.org/amdc/ame2020/NUBASE2020.pdf",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -311,7 +311,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303",
+      "implementationHash": "71e9983143d3f0256d6eb681626833e52771aaa25ae53f3762a9932aef920c3f",
       "documentaryEditionAmendment": {
         "recordedAt": "2026-10-04T13:40:42.995Z",
         "source": "Decaimento físico exponencial; seis meias-vidas NUBASE2020 comparadas e arredondadas; 68Ga 67,8 min; 177Lu 6,64 dias; atividade na unidade original.",
@@ -383,8 +383,34 @@
           "professionalLanguageApproval": "not-performed",
           "sourceRightsApproval": "not-performed",
           "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        },
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "decaimento-radioativo@native-2026-10-04+430ba3bc70b1",
+          "previousImplementationHash": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303",
+          "implementationHash": "71e9983143d3f0256d6eb681626833e52771aaa25ae53f3762a9932aef920c3f",
+          "scientificBodySha256": "12dc158df878d156133428a91869c7cb273d4ff04b75dd6a7812f99b552a8a53",
+          "metadataContractHash": "dc6d0cf859f2bd73a50cebb8bbfa807da379986b378785a15cda928cfd87420c",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
         }
-      ]
+      ],
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      }
     },
     "limits": "Este modelo calcula apenas decaimento físico exponencial de um radionuclídeo, com atividade inicial e final na mesma unidade e tempo compatível com a meia-vida. Não inclui eliminação biológica, meia-vida efetiva, formação por radionuclídeos pais nem dose absorvida. Os seis presets foram comparados às entradas correspondentes da NUBASE2020 e arredondados: 99mTc 6,01 h; 18F 109,7 min; 131I 8,02 dias; 123I 13,2 h; 68Ga 67,8 min; 177Lu 6,64 dias. Identifique o estado nuclear. O arredondamento dos presets não incorpora as incertezas da avaliação e não certifica dados metrológicos nem dosimetria do paciente.",
     "limitsEvidence": {
@@ -414,15 +440,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/decaimento-radioativo/calculator.js",
-    "bytes": 5447,
-    "sha256": "430ba3bc70b1712057404ce0aed10849efd8d07ea2c0d0a3d23bbbec391d1303"
+    "bytes": 5652,
+    "sha256": "71e9983143d3f0256d6eb681626833e52771aaa25ae53f3762a9932aef920c3f"
   },
-  "sourceToolSha256": "8027fba975aab5be14ee51f98c9c0bf642506cd41c478e25baae3c76522fb5db",
+  "sourceToolSha256": "51837afffc84ff145802f56dc635d98139f1d0e08b37d5abcd1d61ea11b2a097",
   "omittedFullReferenceBanks": [
     {
       "rows": 270,
       "sha256": "cc3ee079c6770265d261e6bc8825a285820344809878a0f4d022ed397f54b813",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

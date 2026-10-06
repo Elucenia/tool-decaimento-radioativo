@@ -90,3 +90,51 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+50,0% da atividade inicial após 1,00 meia(s)-vida(s)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Meia-vida física usada | 6,01 h |
+| Constante de decaimento (λ) | 0,1153 por hora |
+| Tempo decorrido | 6,01 h |
+
+
+### 2
+
+25,0% da atividade inicial após 2,00 meia(s)-vida(s)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Meia-vida física usada | 109,7 min |
+| Constante de decaimento (λ) | 0,3791 por hora |
+| Tempo decorrido | 3,66 h |
+
+
+### 3
+
+12,5% da atividade inicial após 3,00 meia(s)-vida(s)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Meia-vida física usada | 8,02 dias |
+| Constante de decaimento (λ) | 0,0036 por hora |
+| Tempo decorrido | 577,44 h |
+
+
+### 4
+
+73,6% da atividade inicial após 0,44 meia(s)-vida(s)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Meia-vida física usada | 67,8 min |
+| Constante de decaimento (λ) | 0,6134 por hora |
+| Tempo decorrido | 0,50 h |
+

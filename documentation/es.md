@@ -90,3 +90,51 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+50,0% de la actividad inicial después de 1,00 vida(s) media(s)
+
+| Detalles del resultado | |
+| --- | --- |
+| Vida media física utilizada | 6,01 h |
+| Constante de desintegración (λ) | 0,1153 por hora |
+| Tiempo transcurrido | 6,01 h |
+
+
+### 2
+
+25,0% de la actividad inicial después de 2,00 vida(s) media(s)
+
+| Detalles del resultado | |
+| --- | --- |
+| Vida media física utilizada | 109,7 min |
+| Constante de desintegración (λ) | 0,3791 por hora |
+| Tiempo transcurrido | 3,66 h |
+
+
+### 3
+
+12,5% de la actividad inicial después de 3,00 vida(s) media(s)
+
+| Detalles del resultado | |
+| --- | --- |
+| Vida media física utilizada | 8,02 días |
+| Constante de desintegración (λ) | 0,0036 por hora |
+| Tiempo transcurrido | 577,44 h |
+
+
+### 4
+
+73,6% de la actividad inicial después de 0,44 vida(s) media(s)
+
+| Detalles del resultado | |
+| --- | --- |
+| Vida media física utilizada | 67,8 min |
+| Constante de desintegración (λ) | 0,6134 por hora |
+| Tiempo transcurrido | 0,50 h |
+

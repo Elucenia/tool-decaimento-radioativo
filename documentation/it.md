@@ -90,3 +90,51 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+50,0% dell’attività iniziale dopo 1,00 emivita/e
+
+| Dettagli del risultato | |
+| --- | --- |
+| Emivita fisica utilizzata | 6,01 h |
+| Costante di decadimento (λ) | 0,1153 all’ora |
+| Tempo trascorso | 6,01 h |
+
+
+### 2
+
+25,0% dell’attività iniziale dopo 2,00 emivita/e
+
+| Dettagli del risultato | |
+| --- | --- |
+| Emivita fisica utilizzata | 109,7 min |
+| Costante di decadimento (λ) | 0,3791 all’ora |
+| Tempo trascorso | 3,66 h |
+
+
+### 3
+
+12,5% dell’attività iniziale dopo 3,00 emivita/e
+
+| Dettagli del risultato | |
+| --- | --- |
+| Emivita fisica utilizzata | 8,02 giorni |
+| Costante di decadimento (λ) | 0,0036 all’ora |
+| Tempo trascorso | 577,44 h |
+
+
+### 4
+
+73,6% dell’attività iniziale dopo 0,44 emivita/e
+
+| Dettagli del risultato | |
+| --- | --- |
+| Emivita fisica utilizzata | 67,8 min |
+| Costante di decadimento (λ) | 0,6134 all’ora |
+| Tempo trascorso | 0,50 h |
+
